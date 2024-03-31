@@ -1,3 +1,10 @@
+
+/**
+ * Homework for TeachMeSkills - Java Lesson #1
+ *
+ * @author Lauren Gerasimova
+ */
+
 public class Lesson1 {
 
     public static void main(String[] args) {
