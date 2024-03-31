@@ -11,6 +11,9 @@ public class Lesson1 {
         task1();
         task2();
         task3();
+        task4();
+        task5();
+        task6();
     }
 
     public static void task1() {
@@ -44,6 +47,33 @@ public class Lesson1 {
         int n = 126;
         int result = calculateNumbers(n);
         System.out.println("n = " + n + ", result is " + result);
+    }
+
+
+    public static void task4() {
+        System.out.println("Lesson 1, Task 4");
+        double n = 59.7;
+        long result = Math.round(n);
+        System.out.println("n = " + n + ", result is " + result);
+    }
+
+    public static void task5() {
+        System.out.println("Lesson 1, Task 5");
+        int q = 21;
+        int w = 8;
+        double result = (double) q / w;
+        System.out.println("g = " + q + ", w = " + w + ", result is " + result);
+    }
+
+    public static void task6() {
+        System.out.println("Lesson 1, Task 6");
+        int a = 1;
+        int b = 2;
+        System.out.println("before swap: a = " + a + ", b = " + b);
+        int c = a;
+        a = b;
+        b = c;
+        System.out.println("after swap: a = " + a + ", b = " + b);
     }
 
 }
