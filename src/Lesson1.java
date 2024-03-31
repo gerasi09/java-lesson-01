@@ -10,6 +10,7 @@ public class Lesson1 {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -20,9 +21,7 @@ public class Lesson1 {
         System.out.println("b = " + b + ", c = " + c + ", result a = " + a);
     }
 
-    public static void task2() {
-        System.out.println("Lesson 1, Task 2");
-        int n = 26;
+    public static int calculateNumbers(int n) {
         int result = 0;
         String text = String.valueOf(n);
         char[] numbers = text.toCharArray();
@@ -30,6 +29,20 @@ public class Lesson1 {
             int number = Character.getNumericValue(value);
             result = result + number;
         }
+        return result;
+    }
+
+    public static void task2() {
+        System.out.println("Lesson 1, Task 2");
+        int n = 26;
+        int result = calculateNumbers(n);
+        System.out.println("n = " + n + ", result is " + result);
+    }
+
+    public static void task3() {
+        System.out.println("Lesson 1, Task 3");
+        int n = 126;
+        int result = calculateNumbers(n);
         System.out.println("n = " + n + ", result is " + result);
     }
 
